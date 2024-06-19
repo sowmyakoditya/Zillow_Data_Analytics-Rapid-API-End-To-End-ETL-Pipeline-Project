@@ -8,7 +8,7 @@ def lambda_handler(event, context):
     object_key = event['Records'][0]['s3']['object']['key']
    
     
-    target_bucket = 'copy-of-raw-json-bucket'
+    target_bucket = 'copy-of-raw-json-intermediate-bucket'
     copy_source = {'Bucket': source_bucket, 'Key': object_key}
    
     waiter = s3_client.get_waiter('object_exists')
