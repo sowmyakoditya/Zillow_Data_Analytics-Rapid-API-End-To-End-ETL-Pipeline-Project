@@ -5,11 +5,10 @@ import pandas as pd
 s3_client = boto3.client('s3')
 
 def lambda_handler(event, context):
-    # TODO implement
     source_bucket = event['Records'][0]['s3']['bucket']['name']
     object_key = event['Records'][0]['s3']['object']['key']
     
-    target_bucket = 'cleaned-data-zone-csv-bucket'
+    target_bucket = 'cleaned-csv-bucket'
     target_file_name = object_key[:-5]
     print(target_file_name)
    
