@@ -4,6 +4,8 @@
 
 The Zillow Data Analytics Project extracts housing data from Zillow using the Rapid API, processes it, and visualizes it using Amazon Web Services (AWS) services. The project utilizes Python, AWS EC2, Airflow, S3, Lambda, Redshift, and Quicksight for data extraction, transformation, and visualization.
 
+![image](https://github.com/sowmyakoditya/Zillow_Data_Analytics-Rapid-API-End-To-End-ETL-Pipeline-Project/assets/166762015/bb555c9d-4200-49cf-94be-780b73547d04)
+
 ## Architecture
 
 **Data Extraction:** Python scripts are used to extract data from Zillow via the Rapid API. The extracted data is stored in an S3 bucket, which serves as the Landing Zone.
